@@ -1,0 +1,9 @@
+# Version: d59b675bea p-2024.6-push-53
+# Command Line: /home/alp/coverity/bin/cov-security-da --dir /home/alp/wifi_ap_optimization/cov-int
+timer                         ms      calls
+-------------------------------------------
+cov_security_da::run           6          1
+
+activity                      ms      calls
+-------------------------------------------
+cov_security_da::run           6          1

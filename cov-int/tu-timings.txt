@@ -1,0 +1,5 @@
+Translation unit:
+1 -> /home/alp/wifi_ap_optimization/wifi_ga.cpp
+cov-emit invocation time (seconds): 1
+cov-translate invocation time (seconds): 9
+cov-build invocation time (seconds): 11

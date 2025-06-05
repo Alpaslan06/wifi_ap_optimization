@@ -1,0 +1,1466 @@
+2025-06-05T14:31:10.018238Z|cov-build|6475|info|> cov-build 2024.6.1 (build d59b675bea p-2024.6-push-53)
+2025-06-05T14:31:10.018269Z|cov-build|6475|info|> Coverity Build Capture (64-bit) version 2024.6.1 on Linux 6.8.0-60-generic x86_64
+2025-06-05T14:31:10.018269Z|cov-build|6475|info|> Internal version numbers: d59b675bea p-2024.6-push-53
+2025-06-05T14:31:10.018269Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018280Z|cov-build|6475|info|> Dumping from hostname : alp
+2025-06-05T14:31:10.018280Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018284Z|cov-build|6475|info|> Platform info:
+2025-06-05T14:31:10.018284Z|cov-build|6475|info|> Sysname = Linux
+2025-06-05T14:31:10.018284Z|cov-build|6475|info|> Release = 6.8.0-60-generic
+2025-06-05T14:31:10.018284Z|cov-build|6475|info|> Machine = x86_64
+2025-06-05T14:31:10.018284Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018284Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018295Z|cov-build|6475|info|> cov-build command: cov-build --dir cov-int g++ -o wifi_ga wifi_ga.cpp 
+2025-06-05T14:31:10.018300Z|cov-build|6475|info|> cov-build expanded command: cov-build --dir cov-int g++ -o wifi_ga wifi_ga.cpp 
+2025-06-05T14:31:10.018508Z|cov-build|6475|info|> build command: /usr/bin/ccache -o wifi_ga wifi_ga.cpp
+2025-06-05T14:31:10.018520Z|cov-build|6475|info|> thunk command: /home/alp/coverity/bin/cov-internal-thunk.sh g++ -o wifi_ga wifi_ga.cpp
+2025-06-05T14:31:10.018520Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018526Z|cov-build|6475|info|> Set MSBUILDDISABLENODEREUSE to 1
+2025-06-05T14:31:10.018530Z|cov-build|6475|info|> Set UseSharedCompilation to false.
+2025-06-05T14:31:10.018538Z|cov-build|6475|info|> Set COVERITY_BIN to /home/alp/coverity/bin
+2025-06-05T14:31:10.018556Z|cov-build|6475|info|> Set COVERITY_SITE_CC to *-g++;*-gcc;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe;apt;ar;c++;cc;cl;clang;clang++;csc;csc.dll;csc2;devenv;dotnet;g++;g++-*;gcc;gcc-*;go;jar;java;javac;javaw;kotlin;kotlinc;ld;lib;link;msbuild;nvcc;razor;scala;scalac;vbc;vbc.dll
+2025-06-05T14:31:10.018562Z|cov-build|6475|info|> Set COVERITY_SITE_CC_CAPTURE_DESCENDANTS to dotnet
+2025-06-05T14:31:10.018569Z|cov-build|6475|info|> Set COVERITY_TEMP to /tmp/cov-alp/453413d46be9b0ecd573ee86df67f8e0
+2025-06-05T14:31:10.018579Z|cov-build|6475|info|> Set COVERITY_COMMON_TEMP to /tmp
+2025-06-05T14:31:10.018585Z|cov-build|6475|info|> Set COVERITY_IDIR to /home/alp/wifi_ap_optimization/cov-int
+2025-06-05T14:31:10.018613Z|cov-build|6475|info|> Set COVERITY_OUTPUT to /home/alp/wifi_ap_optimization/cov-int/build-log.txt
+2025-06-05T14:31:10.018616Z|cov-build|6475|info|> Set COVERITY_LOG to /home/alp/wifi_ap_optimization/cov-int/build-log.txt
+2025-06-05T14:31:10.018628Z|cov-build|6475|info|> Set COVERITY_OUTPUT_ENCODING to UTF-8
+2025-06-05T14:31:10.018632Z|cov-build|6475|info|> Set COVERITY_SYSTEM_ENCODING to UTF-8
+2025-06-05T14:31:10.018638Z|cov-build|6475|info|> Set COVERITY_EMIT to /home/alp/wifi_ap_optimization/cov-int/emit
+2025-06-05T14:31:10.018655Z|cov-build|6475|info|> Set COVERITY_EMIT to /home/alp/wifi_ap_optimization/cov-int/emit
+2025-06-05T14:31:10.018733Z|cov-build|6475|info|> Set COVERITY_JAVA_CONFIG to javac#TEMPLATE##java#TEMPLATE##apt#TEMPLATE##javaw#TEMPLATE###
+2025-06-05T14:31:10.018770Z|cov-build|6475|info|> Set COVERITY_SITE_CC_JVM to apt;java;javac;javaw;kotlin;kotlinc;scala;scalac
+2025-06-05T14:31:10.018776Z|cov-build|6475|info|> Set COVERITY_CONFIGURED_JVM_LANGUAGES to java;kotlin;scala
+2025-06-05T14:31:10.018796Z|cov-build|6475|info|> Set COVERITY_IS_COMPILER to 0
+2025-06-05T14:31:10.018798Z|cov-build|6475|info|> Set COVERITY_TOP_PROCESS to 0
+2025-06-05T14:31:10.018801Z|cov-build|6475|info|> Set COVERITY_IS_COMPILER_DESCENDANT to 0
+2025-06-05T14:31:10.018803Z|cov-build|6475|info|> Set COVERITY_DISENGAGE_EXES to "qemuwrapper;qemu-aarch64;qemu-alpha;qemu-arm;qemu-armeb;qemu-cris;qemu-i386;qemu-m68k;qemu-microblaze;qemu-mips;qemu-mipsel;qemu-nios2;qemu-ppc;qemu-ppc64;qemu-ppc64abi32;qemu-sh4;qemu-sh4eb;qemu-sparc;qemu-sparc32plus;qemu-sparc64;qemu-x86_64"
+2025-06-05T14:31:10.018885Z|cov-build|6475|info|> Set COVERITY_EXEC_LOG_DIR to /home/alp/wifi_ap_optimization/cov-int/exec-log/453413d46be9b0ecd573ee86df67f8e0
+2025-06-05T14:31:10.018906Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018906Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018906Z|cov-build|6475|info|> Dumping configuration:
+2025-06-05T14:31:10.018906Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018912Z|cov-build|6475|info|> User/default configuration:
+2025-06-05T14:31:10.018912Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018916Z|cov-build|6475|info|> Configuration read from: command-line
+2025-06-05T14:31:10.018916Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.018916Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.018916Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/coverity_config.xml
+2025-06-05T14:31:10.018916Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.018916Z|cov-build|6475|info|>     Node: prevent
+2025-06-05T14:31:10.018916Z|cov-build|6475|info|>       Node: dir Value: /home/alp/wifi_ap_optimization/cov-int
+2025-06-05T14:31:10.018916Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-gcc-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-g++-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-gcc-config-1/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-gcc-config-2/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-g++-config-1/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-g++-config-2/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-ld-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-ar-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-gcc-config-3/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-g++-config-3/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-javac-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-java-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-apt-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-javaw-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-jar-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-jsp-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-android-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-capture-config-files-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-msvc-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-msvc_devenv-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-msvc_msbuild-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-msvc_link-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-msvc_lib-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-csc-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-csc-config-1/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-csc-config-2/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-dotnet-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-razor-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-razor-config-1/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-razor-config-2/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-razor-config-3/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-razor-config-4/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-razor-config-5/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-razor-config-6/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-clangcc-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-clangcxx-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-javascript-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-html-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-typescript-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-jsx-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-vue-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-scalac-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-scala-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-vbc-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-vbc-config-1/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-ruby-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-php-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-python-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-nvcc-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-go-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-kotlinc-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-kotlin-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-kotlin-module-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|>     Node: include Value: /home/alp/coverity/config/template-apex-config-0/coverity_config.xml
+2025-06-05T14:31:10.018929Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-gcc-config-0/coverity_config.xml
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: comp_name Value: gcc
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: comp_translator Value: gcc
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: comp_generic Value: gnu
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: id Value: gcc-gcc-.*
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: id Value: g++-gcc-.*
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: id Value: g++cc-gcc-.*
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|>   Node: md5 Value: f9687def489d7080611c957e4baa9367
+2025-06-05T14:31:10.019009Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-g++-config-0/coverity_config.xml
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: comp_name Value: g++
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: comp_translator Value: g++
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: comp_lang Value: C++
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: comp_generic Value: gnu
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: id Value: g++-g++-.*
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-g++-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: id Value: g++cc-g++-.*
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-g++-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|>   Node: md5 Value: c28c5312f5cafb3461550021d5db74e3
+2025-06-05T14:31:10.019042Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-gcc-config-1/coverity_config.xml
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: comp_name Value: gcc-*
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: comp_translator Value: gcc
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: comp_generic Value: gnu
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: id Value: gcc-gcc-*-.*
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-1/../user_nodefs.h
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: id Value: g++-gcc-*-.*
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-1/../user_nodefs.h
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: id Value: g++cc-gcc-*-.*
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-1/../user_nodefs.h
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|>   Node: md5 Value: a78235e18925f1b08d266850c13072da
+2025-06-05T14:31:10.019071Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-gcc-config-2/coverity_config.xml
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: comp_name Value: *-gcc
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: comp_translator Value: gcc
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: comp_generic Value: gnu
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: id Value: gcc-*-gcc-.*
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-2/../user_nodefs.h
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: id Value: g++-*-gcc-.*
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-2/../user_nodefs.h
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: id Value: g++cc-*-gcc-.*
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-2/../user_nodefs.h
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|>   Node: md5 Value: 330d30838fa2e2405efcbf0025bbb1d9
+2025-06-05T14:31:10.019103Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-g++-config-1/coverity_config.xml
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: comp_name Value: g++-*
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: comp_translator Value: g++
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: comp_lang Value: C++
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: comp_generic Value: gnu
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: id Value: g++-g++-*-.*
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-g++-config-1/../user_nodefs.h
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: id Value: g++cc-g++-*-.*
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-g++-config-1/../user_nodefs.h
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|>   Node: md5 Value: e2e8095ec14432cf12688981162829bb
+2025-06-05T14:31:10.019137Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-g++-config-2/coverity_config.xml
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: comp_name Value: *-g++
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: comp_translator Value: g++
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: comp_lang Value: C++
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: comp_generic Value: gnu
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: id Value: g++-*-g++-.*
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-g++-config-2/../user_nodefs.h
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: id Value: g++cc-*-g++-.*
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-g++-config-2/../user_nodefs.h
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|>   Node: md5 Value: f63f9f20a2517b24ca5dec686eb6ca2d
+2025-06-05T14:31:10.019164Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-ld-config-0/coverity_config.xml
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>         Node: comp_name Value: ld
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>         Node: comp_translator Value: ld
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>         Node: comp_lang Value: C++
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>         Node: comp_generic Value: ld
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>         Node: id Value: ld-ld-.*
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-ld-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|>   Node: md5 Value: b7c847d801b0294a4f0f52192f7f3e16
+2025-06-05T14:31:10.019193Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-ar-config-0/coverity_config.xml
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>         Node: comp_name Value: ar
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>         Node: comp_translator Value: ar
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>         Node: comp_lang Value: C++
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>         Node: comp_generic Value: ar
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>         Node: id Value: ar-ar-.*
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-ar-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|>   Node: md5 Value: a125f1c14acadfc9d06e8f9e711705ce
+2025-06-05T14:31:10.019215Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-gcc-config-3/coverity_config.xml
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: comp_name Value: cc
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: comp_translator Value: gcc
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: comp_generic Value: gnu
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: id Value: gcc-cc-.*
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-3/../user_nodefs.h
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: id Value: g++-cc-.*
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-3/../user_nodefs.h
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: id Value: g++cc-cc-.*
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-gcc-config-3/../user_nodefs.h
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|>   Node: md5 Value: 47a502735554e6c25b61a8bf08e5fa6d
+2025-06-05T14:31:10.019239Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-g++-config-3/coverity_config.xml
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: comp_name Value: c++
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: comp_translator Value: g++
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: comp_lang Value: C++
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: comp_generic Value: gnu
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: id Value: g++-c++-.*
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-g++-config-3/../user_nodefs.h
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: id Value: g++cc-c++-.*
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-g++-config-3/../user_nodefs.h
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|>   Node: md5 Value: 6110077f86d72b6001f0d20220e5c335
+2025-06-05T14:31:10.019271Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-javac-config-0/coverity_config.xml
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>         Node: comp_name Value: javac
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>         Node: comp_translator Value: javac
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>         Node: comp_lang Value: Static Java
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>         Node: comp_generic Value: java
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>         Node: id Value: javac-javac-.*
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|>   Node: md5 Value: 4dff82855a5f75486f23dc3987a065c8
+2025-06-05T14:31:10.019301Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-java-config-0/coverity_config.xml
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>         Node: comp_name Value: java
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>         Node: comp_translator Value: java
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>         Node: comp_lang Value: Static Java
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>         Node: comp_generic Value: java
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>         Node: id Value: java-java-.*
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|>   Node: md5 Value: 670e0eff61ca6e268d4c53f998738922
+2025-06-05T14:31:10.019322Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-apt-config-0/coverity_config.xml
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>         Node: comp_name Value: apt
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>         Node: comp_translator Value: apt
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>         Node: comp_lang Value: Static Java
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>         Node: comp_generic Value: java
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>         Node: id Value: apt-apt-.*
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|>   Node: md5 Value: 0c3c17692884987df5fe47566993553e
+2025-06-05T14:31:10.019342Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-javaw-config-0/coverity_config.xml
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>         Node: comp_name Value: javaw
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>         Node: comp_translator Value: javaw
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>         Node: comp_lang Value: Static Java
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>         Node: comp_generic Value: java
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>         Node: id Value: javaw-javaw-.*
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|>   Node: md5 Value: aa3bf49b5164470df847ce74b96aa069
+2025-06-05T14:31:10.019380Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-jar-config-0/coverity_config.xml
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>         Node: comp_name Value: jar
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>         Node: comp_translator Value: jar
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>         Node: comp_generic Value: java
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>         Node: id Value: jar-jar-.*
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|>   Node: md5 Value: 33ddf2457cbbfcbe629d047272f2329e
+2025-06-05T14:31:10.019403Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-jsp-config-0/coverity_config.xml
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-jsp-0
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>         Node: comp_translator Value: jsp
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>         Node: comp_generic Value: java
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.(jsp|jspx)$
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>         Node: id Value: jsp-cov-filesystem-capture-jsp-0-.*
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|>   Node: md5 Value: 425f5b1409471a4a55890e518ffea917
+2025-06-05T14:31:10.019424Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-android-config-0/coverity_config.xml
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-android-0
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>         Node: comp_translator Value: android
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>         Node: comp_generic Value: java
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*(layout.*[/\\].*\.xml|AndroidManifest\.xml|gradlew|gradlew\.bat)$
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>         Node: id Value: android-cov-filesystem-capture-android-0-.*
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|>   Node: md5 Value: f656edef6880a9092fcbe3e2cd89f87a
+2025-06-05T14:31:10.019448Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-capture-config-files-config-0/coverity_config.xml
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-capture-config-files-0
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>         Node: comp_translator Value: capture-config-files
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>         Node: comp_generic Value: capture_config_files
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>         Node: file_include_pattern Value: $capture-config-files$
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>         Node: id Value: capture-config-files-cov-filesystem-capture-capture-config-files-0-.*
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|>   Node: md5 Value: b94e617f98adb465b84e44c2bb1187e2
+2025-06-05T14:31:10.019470Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-msvc-config-0/coverity_config.xml
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: comp_name Value: cl
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: comp_translator Value: msvc
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: comp_generic Value: msvc
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: id Value: msvc-cl-.*
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-msvc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: id Value: msvc_cxx-cl-.*
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-msvc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|>   Node: md5 Value: 6ff8accc4b09ad4e240f1b39a5f34507
+2025-06-05T14:31:10.019493Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-msvc_devenv-config-0/coverity_config.xml
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>         Node: comp_name Value: devenv
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>         Node: comp_translator Value: msvc_devenv
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>         Node: comp_generic Value: msvc
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>         Node: id Value: msvc_devenv-devenv-.*
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-msvc_devenv-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|>   Node: md5 Value: 9e7c8ebecfb66972e502b9a89af46eab
+2025-06-05T14:31:10.019522Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-msvc_msbuild-config-0/coverity_config.xml
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>         Node: comp_name Value: msbuild
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>         Node: comp_translator Value: msvc_msbuild
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>         Node: comp_generic Value: msvc
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>         Node: id Value: msvc_msbuild-msbuild-.*
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-msvc_msbuild-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|>   Node: md5 Value: e5c2e6f12a32bf80391c2b796b7efd24
+2025-06-05T14:31:10.019544Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-msvc_link-config-0/coverity_config.xml
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>         Node: comp_name Value: link
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>         Node: comp_translator Value: msvc_link
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>         Node: comp_generic Value: msvc_link
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>         Node: id Value: msvc_link-link-.*
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-msvc_link-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|>   Node: md5 Value: b1e089736178f146e1b07715b3996fec
+2025-06-05T14:31:10.019568Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-msvc_lib-config-0/coverity_config.xml
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>         Node: comp_name Value: lib
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>         Node: comp_translator Value: msvc_lib
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>         Node: comp_generic Value: msvc_lib
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>         Node: id Value: msvc_lib-lib-.*
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-msvc_lib-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|>   Node: md5 Value: 05f25d5becfea0c774651a40c16d3955
+2025-06-05T14:31:10.019590Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-csc-config-0/coverity_config.xml
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>         Node: comp_name Value: csc
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>         Node: comp_translator Value: csc
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>         Node: comp_lang Value: C#
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>         Node: comp_generic Value: csc
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>         Node: id Value: csc-csc-.*
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|>   Node: md5 Value: fe090f9c5ade85b6791417ae28e7af34
+2025-06-05T14:31:10.019613Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-csc-config-1/coverity_config.xml
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>         Node: comp_name Value: csc2
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>         Node: comp_translator Value: csc
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>         Node: comp_lang Value: C#
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>         Node: comp_generic Value: csc
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>         Node: id Value: csc-csc2-.*
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|>   Node: md5 Value: 977437d947559cc8595a296b529da4b3
+2025-06-05T14:31:10.019636Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-csc-config-2/coverity_config.xml
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>         Node: comp_name Value: csc.dll
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>         Node: comp_translator Value: csc
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>         Node: comp_lang Value: C#
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>         Node: comp_generic Value: csc
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>         Node: id Value: csc-csc.dll-.*
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|>   Node: md5 Value: d7617a61a1e5d38ea17e0065e15a334c
+2025-06-05T14:31:10.019656Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-dotnet-config-0/coverity_config.xml
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>         Node: comp_name Value: dotnet
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>         Node: comp_translator Value: dotnet
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>         Node: comp_lang Value: C#
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>         Node: comp_capture_descendants Value: true
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>         Node: comp_generic Value: dotnet
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>         Node: id Value: dotnet-dotnet-.*
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|>   Node: md5 Value: c1f04f52f32e19ee321f007827420925
+2025-06-05T14:31:10.019676Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-razor-config-0/coverity_config.xml
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>         Node: comp_name Value: razor
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>         Node: comp_translator Value: razor
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>         Node: comp_lang Value: Razor
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>         Node: comp_generic Value: razor
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>         Node: id Value: razor-razor-.*
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|>   Node: md5 Value: 299c29c5e1aed07e748c20434abece6a
+2025-06-05T14:31:10.019701Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-razor-config-1/coverity_config.xml
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>         Node: comp_translator Value: razor
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>         Node: comp_lang Value: Razor
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>         Node: comp_generic Value: razor
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe-.*
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|>   Node: md5 Value: b8062469abf35bf27e59c61097a25898
+2025-06-05T14:31:10.019722Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-razor-config-2/coverity_config.xml
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>         Node: comp_translator Value: razor
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>         Node: comp_lang Value: Razor
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>         Node: comp_generic Value: razor
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll-.*
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|>   Node: md5 Value: a9f1338dd3da86ae5a0b02feb72011bc
+2025-06-05T14:31:10.019743Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-razor-config-3/coverity_config.xml
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>         Node: comp_translator Value: razor
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>         Node: comp_lang Value: Razor
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>         Node: comp_generic Value: razor
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe-.*
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|>   Node: md5 Value: d148b26c0cca97f3cfbca9c9e97fbd2c
+2025-06-05T14:31:10.019766Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-razor-config-4/coverity_config.xml
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>         Node: comp_translator Value: razor
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>         Node: comp_lang Value: Razor
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>         Node: comp_generic Value: razor
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe-.*
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|>   Node: md5 Value: 4192dd38aff0a2b1f462f5ea2de56602
+2025-06-05T14:31:10.019787Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-razor-config-5/coverity_config.xml
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>         Node: comp_translator Value: razor
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>         Node: comp_lang Value: Razor
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>         Node: comp_generic Value: razor
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll-.*
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|>   Node: md5 Value: 9fac531b04a3ec13b4f2c7884a7b9d4d
+2025-06-05T14:31:10.019808Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-razor-config-6/coverity_config.xml
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>         Node: comp_translator Value: razor
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>         Node: comp_lang Value: Razor
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>         Node: comp_generic Value: razor
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll-.*
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|>   Node: md5 Value: 42e63af2dc0e9a8129a530b0de6d639f
+2025-06-05T14:31:10.019831Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-clangcc-config-0/coverity_config.xml
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: comp_name Value: clang
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: comp_translator Value: clangcc
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: comp_generic Value: clang
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: clangcc:android
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: clangcc:apple
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: clangcc:llvm
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: comp_is_redirect Value: true
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: id Value: clangcc-clang-.*
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: id Value: clangcxx-clang-.*
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: id Value: clangcxxcc-clang-.*
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: id Value: clangobjc-clang-.*
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: id Value: clangobjcxx-clang-.*
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|>   Node: md5 Value: 999eeab8f668f6ac09e46790d19b72ec
+2025-06-05T14:31:10.019852Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-clangcxx-config-0/coverity_config.xml
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: comp_name Value: clang++
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: comp_translator Value: clangcxx
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: comp_lang Value: C
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: comp_generic Value: clang
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: clangcxx:android
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: clangcxx:apple
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: clangcxx:llvm
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: comp_is_redirect Value: true
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: id Value: clangcxx-clang++-.*
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcxx-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: id Value: clangcxxcc-clang++-.*
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcxx-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: id Value: clangobjc-clang++-.*
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcxx-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: id Value: clangobjcxx-clang++-.*
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-clangcxx-config-0/../user_nodefs.h
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|>   Node: md5 Value: db1ddc7eeb63c302f4d476ef2fa8942a
+2025-06-05T14:31:10.019900Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-javascript-config-0/coverity_config.xml
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-javascript-0
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: comp_translator Value: javascript
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: comp_generic Value: javascript
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.(js|xsjs|xsjslib|cjs|mjs|map)$
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: id Value: javascript-cov-filesystem-capture-javascript-0-.*
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|>   Node: md5 Value: 28137a21bdd7588523037a27a58d8c5c
+2025-06-05T14:31:10.019945Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-html-config-0/coverity_config.xml
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-html-0
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: comp_translator Value: html
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: comp_generic Value: javascript
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.(html|htm)$
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: id Value: html-cov-filesystem-capture-html-0-.*
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|>   Node: md5 Value: d7d10d6a1e70369dda56aa898ef86396
+2025-06-05T14:31:10.019972Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-typescript-config-0/coverity_config.xml
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-typescript-0
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: comp_translator Value: typescript
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: comp_generic Value: typescript
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*(\.(ts|tsx|cts|mts)$)|(tsconfig.json)$
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: id Value: typescript-cov-filesystem-capture-typescript-0-.*
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|>   Node: md5 Value: cf8788a68f3a4cc84a38e8030bdce56b
+2025-06-05T14:31:10.020002Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-jsx-config-0/coverity_config.xml
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-jsx-0
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: comp_translator Value: jsx
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: comp_generic Value: javascript
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.jsx$
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: id Value: jsx-cov-filesystem-capture-jsx-0-.*
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|>   Node: md5 Value: 5d1e0d3949dd2e7d59d0ebbcb9d50844
+2025-06-05T14:31:10.020030Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-vue-config-0/coverity_config.xml
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-vue-0
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: comp_translator Value: vue
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: comp_generic Value: javascript
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.vue$
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [.]cache[.]js$
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: id Value: vue-cov-filesystem-capture-vue-0-.*
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|>   Node: md5 Value: 366ed949b2aaae956ba72f463b10a2c2
+2025-06-05T14:31:10.020059Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-scalac-config-0/coverity_config.xml
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>         Node: comp_name Value: scalac
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>         Node: comp_translator Value: scalac
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>         Node: comp_lang Value: Scala
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>         Node: comp_generic Value: scala
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>         Node: id Value: scalac-scalac-.*
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|>   Node: md5 Value: 72f6e51a33977034a91c37366e5501cc
+2025-06-05T14:31:10.020087Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-scala-config-0/coverity_config.xml
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>         Node: comp_name Value: scala
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>         Node: comp_translator Value: scala
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>         Node: comp_lang Value: Scala
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>         Node: comp_generic Value: scala
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>         Node: id Value: scala-scala-.*
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|>   Node: md5 Value: 06e293540a5f4dc8f97f0f06a6021b74
+2025-06-05T14:31:10.020110Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-vbc-config-0/coverity_config.xml
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>         Node: comp_name Value: vbc
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>         Node: comp_translator Value: vbc
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>         Node: comp_lang Value: Visual Basic
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>         Node: comp_generic Value: vbc
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>         Node: id Value: vbc-vbc-.*
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|>   Node: md5 Value: feeb8b03a6f975f0aaca18abe6c96895
+2025-06-05T14:31:10.020130Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-vbc-config-1/coverity_config.xml
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>         Node: comp_name Value: vbc.dll
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>         Node: comp_translator Value: vbc
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>         Node: comp_lang Value: Visual Basic
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>         Node: comp_generic Value: vbc
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>         Node: id Value: vbc-vbc.dll-.*
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|>   Node: md5 Value: fb11aa1996139335dbc0bdc5b4851b37
+2025-06-05T14:31:10.020151Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-ruby-config-0/coverity_config.xml
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-ruby-0
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>         Node: comp_translator Value: ruby
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>         Node: comp_generic Value: ruby
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*(\.rb|Gemfile)$
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>         Node: id Value: ruby-cov-filesystem-capture-ruby-0-.*
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|>   Node: md5 Value: 9a95acc499de60467aeb7e3b29315f90
+2025-06-05T14:31:10.020173Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-php-config-0/coverity_config.xml
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-php-0
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>         Node: comp_translator Value: php
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>         Node: comp_generic Value: php
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.ph(p|p[1-9]|tml)$
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>         Node: id Value: php-cov-filesystem-capture-php-0-.*
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|>   Node: md5 Value: a96edcebfed40db3833800e30a67af69
+2025-06-05T14:31:10.020195Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-python-config-0/coverity_config.xml
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-python-0
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>         Node: comp_translator Value: python
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>         Node: comp_generic Value: python
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.p(y|y3)$
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>         Node: id Value: python-cov-filesystem-capture-python-0-.*
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|>   Node: md5 Value: fffe872853e56190241eb6585606928f
+2025-06-05T14:31:10.020217Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-nvcc-config-0/coverity_config.xml
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: comp_name Value: nvcc
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: comp_translator Value: nvcc
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: comp_lang Value: CUDA
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: comp_generic Value: nvcc
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: nvcc:qnx
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: nvcc:gnu
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: comp_autodetect_type Value: nvcc:msvc
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: comp_is_redirect Value: true
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: id Value: nvcc-nvcc-.*
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-nvcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: id Value: nvcc_c-nvcc-.*
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-nvcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: id Value: nvcc_cxx-nvcc-.*
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: opt_preinclude_file Value: /home/alp/coverity/config/template-nvcc-config-0/../user_nodefs.h
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|>   Node: md5 Value: 466d2cf0b12aae8d4c08d59f370fbb4b
+2025-06-05T14:31:10.020242Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-go-config-0/coverity_config.xml
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>         Node: comp_name Value: go
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>         Node: comp_translator Value: go
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>         Node: comp_lang Value: Go
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>         Node: comp_generic Value: go
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>         Node: id Value: go-go-.*
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|>   Node: md5 Value: 395609931cebc474122a4d66367445f5
+2025-06-05T14:31:10.020279Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-kotlinc-config-0/coverity_config.xml
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>         Node: comp_name Value: kotlinc
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>         Node: comp_translator Value: kotlinc
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>         Node: comp_lang Value: Kotlin
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>         Node: comp_generic Value: kotlin
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>         Node: id Value: kotlinc-kotlinc-.*
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|>   Node: md5 Value: c68e7b6acd2042f4dec6d624b2d2aa7b
+2025-06-05T14:31:10.020303Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-kotlin-config-0/coverity_config.xml
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>         Node: comp_name Value: kotlin
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>         Node: comp_translator Value: kotlin
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>         Node: comp_lang Value: Kotlin
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>         Node: comp_generic Value: kotlin
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>         Node: id Value: kotlin-kotlin-.*
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|>   Node: md5 Value: 1d37b51d78837c20116306c377ae2080
+2025-06-05T14:31:10.020324Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-kotlin-module-config-0/coverity_config.xml
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-kotlin-module-0
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>         Node: comp_translator Value: kotlin-module
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>         Node: comp_generic Value: kotlin
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.kotlin_module$
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>         Node: id Value: kotlin-module-cov-filesystem-capture-kotlin-module-0-.*
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|>   Node: md5 Value: 33c8dff4b1803fd1b46ff7624a34a01b
+2025-06-05T14:31:10.020345Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|> Configuration read from: /home/alp/coverity/config/template-apex-config-0/coverity_config.xml
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|> Node: coverity
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>   Node: cit_version Value: 1
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>   Node: config
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>     Node: build
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>       Node: compiler
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>         Node: template_compiler Value: true
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>         Node: comp_name Value: cov-filesystem-capture-apex-0
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>         Node: comp_translator Value: apex
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>         Node: comp_lang Value: Non Compiled
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>         Node: comp_generic Value: apex
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>         Node: file_include_pattern Value: ^.*\.(cls|tgr|page)$
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>       Node: options
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>         Node: id Value: apex-cov-filesystem-capture-apex-0-.*
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>         Node: begin_command_line_config
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|>   Node: md5 Value: 1fb05d61e492051b5d8339f9e71cc7cf
+2025-06-05T14:31:10.020377Z|cov-build|6475|info|> 
+2025-06-05T14:31:10.023341Z|cov-build|6475|info|> Using LD_PRELOAD = /home/alp/coverity/bin/libcapture-linux64-${PLATFORM}.so
+[6478] EXECUTING: g++ -o wifi_ga wifi_ga.cpp
+[6480] CWD: /home/alp/wifi_ap_optimization
+[6480] COMPILING: /home/alp/coverity/bin/cov-translate g++ -o wifi_ga wifi_ga.cpp
+Encountered compiler invocation for first time, configuring it: /usr/bin/ccache
+[STATUS] Using comptype g++
+* Configuring /usr/lib/ccache/g++ as a C++ compiler
+[STATUS] g++-config-0: Running sanity tests on native compiler
+[STATUS] g++-config-0: Detecting size and alignment of fundamental types.
+[STATUS] g++-config-0: Retrieving values for macros
+[STATUS] g++-config-0: Running config probes
+* Configuring /usr/lib/ccache/g++ as a C compiler
+[STATUS] g++cc-config-0: Running sanity tests on native compiler
+[STATUS] g++cc-config-0: Detecting size and alignment of fundamental types.
+[STATUS] g++cc-config-0: Retrieving values for macros
+[STATUS] g++cc-config-0: Running config probes
+Added template compiler configuration instance /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/coverity_config.xml
+Configuration read from: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: include Value: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++-config-0/coverity_config.xml
+    Node: include Value: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++cc-config-0/coverity_config.xml
+Configuration read from: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: g++
+        Node: comp_name Value: ccache
+        Node: comp_dir Value: /usr/bin
+        Node: comp_translator Value: g++
+        Node: comp_lang Value: C++
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: GNU C++ Compiler
+        Node: comp_next_type Value: g++cc
+        Node: comp_generic Value: gnu
+        Node: comp_require
+        Node: id Value: g++-g++-11.4.0-30bd4599b3106c3deb6956bb49733d98-0
+        Node: version Value: 11.4.0
+        Node: is_compiler Value: true
+        Node: is_linker Value: true
+        Node: target_platform Value: all
+      Node: options
+        Node: id Value: g++-g++-11.4.0-30bd4599b3106c3deb6956bb49733d98-0
+        Node: template_config_option_id Value: g++-g++-.*
+        Node: compile_options
+        Node: sysinclude_dir Value: /usr/include/c++/11
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu/c++/11
+        Node: sysinclude_dir Value: /usr/include/c++/11/backward
+        Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/11/include
+        Node: sysinclude_dir Value: /usr/local/include
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+        Node: sysinclude_dir Value: /usr/include
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_remove_arg Value: -o.+
+        Node: preprocess_remove_arg Value: -c
+        Node: preprocess_remove_arg Value: -Werror
+        Node: preprocess_remove_next_arg Value: -o
+        Node: preprocess_switch Value: -xc++
+        Node: preprocess_switch Value: -E
+        Node: preprocess_switch Value: -U__BLOCKS__
+        Node: preprocess_compile_switch Value: -C
+        Node: preprocess_output Value: -
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --coverity_config_md5=6a908993cee1f6f393970c9179a26891
+        Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+        Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+        Node: prepend_arg Value: --add_type_modifier=__coverity_float
+        Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+        Node: prepend_arg Value: --no_predefined_feature_test_macros
+        Node: prepend_arg Value: --no_stdarg_builtin
+        Node: prepend_arg Value: --enable_128bit_int
+        Node: prepend_arg Value: --no_predefined_cplusplus
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 11.4.0
+        Node: prepend_arg Value: --size_t_type=m
+        Node: prepend_arg Value: --ptrdiff_t_type=l
+        Node: prepend_arg Value: --type_sizes=w4xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --type_alignments=w4xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --char_bit_size=8
+        Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+        Node: prepend_arg Value: --wchar_t_keyword
+        Node: prepend_arg Value: --no_multiline_string
+        Node: prepend_arg Value: --no_trigraphs
+        Node: prepend_arg Value: --ignore_calling_convention
+        Node: prepend_arg Value: --enable_80bit_float
+        Node: prepend_arg Value: --enable_128bit_float
+        Node: prepend_arg Value: --macro_stack_pragmas
+        Node: prepend_arg Value: --exceptions
+        Node: prepend_arg Value: --arg_dependent_overload
+        Node: prepend_arg Value: --inline_keyword
+        Node: prepend_arg Value: --has_include_macro
+        Node: prepend_arg Value: --has_include_next_macro
+        Node: prepend_arg Value: --has_cpp_attribute_macro
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+        Node: opt_preinclude_file Value: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++-config-0/../user_nodefs.h
+        Node: pch_options
+          Node: archetype Value: gcc
+        Node: link_options
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/11/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /lib/../lib/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/11/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../
+        Node: library_search_path Value: /lib/
+        Node: library_search_path Value: /usr/lib/
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libstdc++.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libm.so
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libm.so.6
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libmvec.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libc.so
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib64/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib64/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        Node: pre_trans
+          Node: options
+            Node: pre_prepend_arg Value: -coverity_c_suffixes_are_cxx
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPLUS_INCLUDE_PATH
+            Node: pre_prepend_arg Value: --c++
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: gnu_pre_translate
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPATH
+            Node: includes_from_env_var_empty_is_cwd Value: true
+        Node: begin_command_line_config
+  Node: md5 Value: cdfc0e4dc68b269632b943002791a75f
+Configuration read from: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++cc-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: g++
+        Node: comp_name Value: ccache
+        Node: comp_dir Value: /usr/bin
+        Node: comp_translator Value: g++cc
+        Node: comp_lang Value: C
+        Node: comp_front_end Value: cov-emit
+        Node: comp_desc Value: GNU C++ Compiler
+        Node: comp_generic Value: gnu
+        Node: comp_require
+        Node: id Value: g++cc-g++-11.4.0-30bd4599b3106c3deb6956bb49733d98-0
+        Node: version Value: 11.4.0
+        Node: is_compiler Value: true
+        Node: is_linker Value: true
+        Node: target_platform Value: all
+      Node: options
+        Node: id Value: g++cc-g++-11.4.0-30bd4599b3106c3deb6956bb49733d98-0
+        Node: template_config_option_id Value: g++cc-g++-.*
+        Node: compile_options
+        Node: sysinclude_dir Value: /usr/lib/gcc/x86_64-linux-gnu/11/include
+        Node: sysinclude_dir Value: /usr/local/include
+        Node: sysinclude_dir Value: /usr/include/x86_64-linux-gnu
+        Node: sysinclude_dir Value: /usr/include
+        Node: dryrun_switch Value: -xc
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -xc
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_remove_arg Value: -o.+
+        Node: preprocess_remove_arg Value: -c
+        Node: preprocess_remove_arg Value: -Werror
+        Node: preprocess_remove_next_arg Value: -o
+        Node: preprocess_switch Value: -E
+        Node: preprocess_switch Value: -U__BLOCKS__
+        Node: preprocess_switch Value: -xc
+        Node: preprocess_compile_switch Value: -C
+        Node: preprocess_output Value: -
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++cc-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++cc-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --coverity_config_md5=77f130ac318b03d78a5abe72ed98bbdf
+        Node: prepend_arg Value: --fixed_point
+        Node: prepend_arg Value: --add_type_modifier=__coverity___fpreg
+        Node: prepend_arg Value: --add_type_modifier=__coverity_decimal
+        Node: prepend_arg Value: --add_type_modifier=__coverity_float
+        Node: prepend_arg Value: --add_type_modifier=__coverity_floatx
+        Node: prepend_arg Value: --no_predefined_feature_test_macros
+        Node: prepend_arg Value: --no_stdarg_builtin
+        Node: prepend_arg Value: --enable_128bit_int
+        Node: prepend_arg Value: --no_predefined_cplusplus
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 11.4.0
+        Node: prepend_arg Value: --size_t_type=m
+        Node: prepend_arg Value: --ptrdiff_t_type=l
+        Node: prepend_arg Value: --type_sizes=xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --type_alignments=xl8i4s2e16d8f4P8
+        Node: prepend_arg Value: --char_bit_size=8
+        Node: prepend_arg Value: --restrict
+        Node: prepend_arg Value: --gnu_carriage_return_line_terminator
+        Node: prepend_arg Value: --wchar_t_type=i
+        Node: prepend_arg Value: --no_multiline_string
+        Node: prepend_arg Value: --no_trigraphs
+        Node: prepend_arg Value: --ignore_calling_convention
+        Node: prepend_arg Value: --c11
+        Node: prepend_arg Value: --enable_80bit_float
+        Node: prepend_arg Value: --enable_128bit_float
+        Node: prepend_arg Value: --allow__bool
+        Node: prepend_arg Value: --macro_stack_pragmas
+        Node: prepend_arg Value: --inline_keyword
+        Node: prepend_arg Value: --has_include_macro
+        Node: prepend_arg Value: --has_include_next_macro
+        Node: prepend_arg Value: --has_cpp_attribute_macro
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: skip_file Value: cgo-cc-input-[0-9]+\.(c|cc|cpp|cxx)
+        Node: opt_preinclude_file Value: /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++cc-config-0/../user_nodefs.h
+        Node: pch_options
+          Node: archetype Value: gcc
+        Node: link_options
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/11/
+        Node: library_search_path Value: /lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /lib/../lib/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/11/
+        Node: library_search_path Value: /usr/lib/x86_64-linux-gnu/
+        Node: library_search_path Value: /usr/lib/../lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/
+        Node: library_search_path Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../
+        Node: library_search_path Value: /lib/
+        Node: library_search_path Value: /usr/lib/
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libstdc++.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libm.so
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libm.so.6
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libmvec.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libc.so
+        Node: implicit_link_input Value: /lib/x86_64-linux-gnu/libc.so.6
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib64/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+        Node: implicit_link_input Value: /lib64/ld-linux-x86-64.so.2
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/libgcc_s.so.1
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+        Node: implicit_link_input Value: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: gnu_pre_translate
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: CPATH
+            Node: includes_from_env_var_empty_is_cwd Value: true
+        Node: trans
+          Node: options
+            Node: includes_from_env_var Value: C_INCLUDE_PATH
+            Node: pre_prepend_arg Value: --c
+        Node: begin_command_line_config
+  Node: md5 Value: 9085037fe9b30bc780db7a2c3eb8250b
+COV_TRANSLATE EXPANDED ARGS: "-o" "wifi_ga" "wifi_ga.cpp"
+[STATUS] Compiling wifi_ga.cpp
+/home/alp/coverity/bin/cov-emit --dir=/home/alp/wifi_ap_optimization/cov-int --ignore_path=/tmp/cov-alp/453413d46be9b0ecd573ee86df67f8e0/cov-configure --ignore_path=/tmp/cov-alp/453413d46be9b0ecd573ee86df67f8e0/cov-alp/1dec158172e6660992519dee9ce88869 --pre_preinclude /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++-config-0/coverity-macro-compat.h --pre_preinclude /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/g++-config-0/coverity-compiler-compat.h --c++ --coverity_config_md5=6a908993cee1f6f393970c9179a26891 --add_type_modifier=__coverity___fpreg --add_type_modifier=__coverity_decimal --add_type_modifier=__coverity_float --add_type_modifier=__coverity_floatx --no_predefined_feature_test_macros --no_stdarg_builtin --enable_128bit_int --no_predefined_cplusplus -w --no_predefines --comp_ver 11.4.0 --char_bit_size=8 --gnu_carriage_return_line_terminator --wchar_t_keyword --no_multiline_string --no_trigraphs --ignore_calling_convention --enable_80bit_float --enable_128bit_float --macro_stack_pragmas --exceptions --arg_dependent_overload --inline_keyword --has_include_macro --has_include_next_macro --has_cpp_attribute_macro --no_predefines --emit_pch_dependencies --no_macro_preempts_udl_suffix --builtin_emulation --allow_incompat_throw --new_array_args --type_traits_helpers --c++17 --gnu_version 110400 --sys_include=/usr/include/c++/11 --sys_include=/usr/include/x86_64-linux-gnu/c++/11 --sys_include=/usr/include/c++/11/backward --sys_include=/usr/lib/gcc/x86_64-linux-gnu/11/include --sys_include=/usr/local/include --sys_include=/usr/include/x86_64-linux-gnu --sys_include=/usr/include -D__NO_INLINE__ --type_sizes=e16Pdlx8fiw4s2 --type_alignments=e16Pdlx8fiw4s2 --size_t_type=m --ptrdiff_t_type=l wifi_ga.cpp 
+Emit for file '/home/alp/wifi_ap_optimization/wifi_ga.cpp' (TU 1) complete.
+[6478] EXECUTING: /usr/bin/g++ -o wifi_ga wifi_ga.cpp
+[7817] EXECUTING: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -imultiarch x86_64-linux-gnu -D_GNU_SOURCE wifi_ga.cpp -quiet -dumpbase wifi_ga.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cce9hJj0.s
+[7818] EXECUTING: as --64 -o /tmp/ccsvyZGt.o /tmp/cce9hJj0.s
+[7819] EXECUTING: /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUuZ614.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o wifi_ga /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. /tmp/ccsvyZGt.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+[7820] EXECUTING: /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUuZ614.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o wifi_ga /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. /tmp/ccsvyZGt.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+2025-06-05T14:31:20.788872Z|cov-build|6475|info|> Invoking cov-security-da with commands: /home/alp/coverity/bin/cov-security-da --dir /home/alp/wifi_ap_optimization/cov-int
+2025-06-05T14:31:20.912708Z|cov-build|6475|info|> Dynamic analyzer took 123 ms
+2025-06-05T14:31:20.912708Z|cov-build|6475|info|> Build time (cov-build overall): 00:00:10.971200
+2025-06-05T14:31:20.912708Z|cov-build|6475|info|> 
+2025-06-05T14:31:20.914434Z|cov-build|6475|info|> Build time (C/C++ emits total): 00:00:09.739161
+2025-06-05T14:31:20.914434Z|cov-build|6475|info|> 
+2025-06-05T14:31:20.914434Z|cov-build|6475|info|> 
+2025-06-05T14:31:20.914510Z|cov-build|6475|info|> Emitted 1 C/C++ compilation units (100%) successfully
+2025-06-05T14:31:20.914510Z|cov-build|6475|info|> 
+2025-06-05T14:31:20.914510Z|cov-build|6475|info|> 1 C/C++ compilation units (100%) are ready for analysis
+2025-06-05T14:31:20.914510Z|cov-build|6475|info|> The cov-build utility completed successfully.

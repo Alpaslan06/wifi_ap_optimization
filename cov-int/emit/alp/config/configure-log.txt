@@ -1,0 +1,3 @@
+Encountered compiler invocation for first time, configuring it: /usr/bin/ccache
+[STATUS] Using comptype g++
+Added template compiler configuration instance /home/alp/wifi_ap_optimization/cov-int/emit/alp/config/30bd4599b3106c3deb6956bb49733d98/coverity_config.xml

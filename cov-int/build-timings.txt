@@ -1,0 +1,35 @@
+# Version: d59b675bea p-2024.6-push-53
+# Command Line: cov-build --dir cov-int g++ -o wifi_ga wifi_ga.cpp
+timer                                    ms      calls
+------------------------------------------------------
+cov-build                             10906          1
+  create_or_open emit DB                  6          1
+    open emit DB                          6          1
+  add_string_to_table                     0          9
+  addEmitFileName                         0          1
+  addEnvironmentVars                      1          1
+    add_string_to_table                   0         61
+  Prepare capture                         0          1
+  Running build command               10500          1
+  parse_xml_config_file                   6          1
+  generate_generic_compiler_map         213          1
+    handle_derived_compiler              22         16
+  SecurityDA                            122          1
+  TUInfo::getPrimarySFRow                 0          1
+  (left over)                            58
+
+activity                                 ms      calls
+------------------------------------------------------
+cov-build                             10906          1
+parse_xml_config_file                     6          1
+create_or_open emit DB                    6          1
+open emit DB                              6          1
+add_string_to_table                       0         70
+addEmitFileName                           0          1
+addEnvironmentVars                        1          1
+Prepare capture                           0          1
+Running build command                 10500          1
+generate_generic_compiler_map           213          1
+handle_derived_compiler                  22         16
+SecurityDA                              122          1
+TUInfo::getPrimarySFRow                   0          1

@@ -1,0 +1,4 @@
+/home/alp/coverity/bin/cov-security-da --dir /home/alp/wifi_ap_optimization/cov-int 
+cov-security-da version 2024.6.1 on Linux 6.8.0-60-generic x86_64
+Internal version numbers: d59b675bea p-2024.6-push-53
+

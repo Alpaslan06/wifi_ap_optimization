@@ -1,0 +1,5 @@
+Native Compiler invocation: /usr/lib/ccache/g++ -o wifi_ga wifi_ga.cpp
+Working directory: /home/alp/wifi_ap_optimization
+Comptype: g++
+* Configuring /usr/lib/ccache/g++ as a C++ compiler
+* Configuring /usr/lib/ccache/g++ as a C compiler
