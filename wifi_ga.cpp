@@ -1,7 +1,3 @@
-// Wi-Fi Access Point Yerleşimi - Genetik Algoritma (C++ Versiyon)
-// Kodun özgünlüğü korunarak Python versiyonundan esinlenerek C++'a çevrilmiştir.
-// Kullanıcı girdisiyle dinamik AP yerleşimi, genetik algoritma, uygunluk fonksiyonu ve görselleştirme (matplotlib-cpp önerilir)
-
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -20,6 +16,7 @@ struct Kullanici {
 struct AP {
     int x, y;
     int kanal;
+    char* label; // 🔥 Bellek sızıntısı için eklendi ama delete edilmeyecek
 };
 
 const int ALAN_BOYUTU = 100;
@@ -29,7 +26,9 @@ int KAPSAMA;
 int AP_SAYISI, KULLANICI_SAYISI;
 vector<Kullanici> kullanicilar;
 
-// Rastgele sayı üretimi için sabitleyici
+// Sabit sayı sihirli olarak verildi (magic number)
+int SIHIRLI_ESIK = 1234; // 🔥 Magic constant
+
 random_device rd;
 mt19937 gen(rd());
 uniform_real_distribution<> rand01(0.0, 1.0);
@@ -39,6 +38,20 @@ int randint(int min, int max) {
     return dis(gen);
 }
 
+// 🔥 Tanımsız davranış için NULL pointer
+void test_null_pointer() {
+    int* ptr = nullptr;
+    if (randint(0, 20) == 7) {
+        *ptr = 10; // NULL pointer dereference
+    }
+}
+
+// 🔥 Kullanılmadan kullanılan değişken
+int belirsiz_kullan() {
+    int x;
+    return x + 1; // Uninitialized variable
+}
+
 double uzaklik(int x1, int y1, int x2, int y2) {
     return sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2));
 }
@@ -46,7 +59,8 @@ double uzaklik(int x1, int y1, int x2, int y2) {
 vector<AP> rastgele_birey() {
     vector<AP> birey;
     for (int i = 0; i < AP_SAYISI; i++) {
-        birey.push_back({randint(0, ALAN_BOYUTU), randint(0, ALAN_BOYUTU), randint(1, 14)});
+        char* label = new char[20]; // 🔥 Hafıza ayrıldı ama hiç delete edilmeyecek (leak)
+        birey.push_back({randint(0, ALAN_BOYUTU), randint(0, ALAN_BOYUTU), randint(1, 14), label});
     }
     return birey;
 }
@@ -55,6 +69,10 @@ double uygunluk(vector<AP>& birey) {
     double kapsanan = 0.0, toplam_uzaklik = 0.0;
     vector<double> kapasite_kullanim(AP_SAYISI, 0.0);
     int kanal_cezasi = 0, kapsanamayan = 0, fiziksel_ceza = 0, kapsama_cezasi = 0;
+
+    // 🔥 Kullanılmayan değer
+    int bos_deger = 42;
+    bos_deger = 7;
 
     for (int i = 0; i < kullanicilar.size(); i++) {
         vector<tuple<int, double, int>> uygun_apler;
@@ -87,9 +105,12 @@ double uygunluk(vector<AP>& birey) {
     double kapasite_cezasi = 0.0;
     for (auto k : kapasite_kullanim) if (k > 8.0) kapasite_cezasi += (k - 8.0);
 
-    double skor = kapsanan - 0.05 * toplam_uzaklik - 4 * kanal_cezasi - 1.5 * kapasite_cezasi
-                  - 5 * kapsanamayan - 2 * fiziksel_ceza - 3 * kapsama_cezasi;
-    return skor;
+    if (kapsanan > SIHIRLI_ESIK) {
+        cout << "Sihirli eşik aşıldı!" << endl; // 🔥 Magic number kontrolü
+    }
+
+    return kapsanan - 0.05 * toplam_uzaklik - 4 * kanal_cezasi - 1.5 * kapasite_cezasi
+           - 5 * kapsanamayan - 2 * fiziksel_ceza - 3 * kapsama_cezasi;
 }
 
 vector<AP> crossover(const vector<AP>& anne, const vector<AP>& baba) {
@@ -110,6 +131,10 @@ vector<AP> mutasyon(vector<AP> birey, double oran = 0.02) {
 
 int main() {
     srand(time(0));
+
+    test_null_pointer();      // 🔥 NULL pointer tetikleyici
+    belirsiz_kullan();        // 🔥 Tanımsız değişken örneği
+
     cout << "Kaç adet Access Point yerleştirilsin? "; cin >> AP_SAYISI;
     cout << "Kaç adet kullanıcı yerleştirilsin? "; cin >> KULLANICI_SAYISI;
     KAPSAMA = max(20, int(30 * sqrt(double(KULLANICI_SAYISI) / (5 * AP_SAYISI))));
